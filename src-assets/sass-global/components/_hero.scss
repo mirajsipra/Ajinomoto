@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  margin-bottom: 22%;
+
+  .hero-swiper {
+    .swiper-slide {
+      &__inner {
+        .hero-caption {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+          padding: 250px 0 110px;
+
+          .content-block {
+            width: 100%;
+            max-width: 705px;
+
+            h1 {
+              margin-bottom: 42px;
+            }
+
+            p {
+              width: 100%;
+              max-width: 560px;
+            }
+
+            .btn-wrapper {
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination-wrapper {
+      position: absolute;
+      left: 0;
+      bottom: 50px;
+      width: 100%;
+      pointer-events: none;
+      
+      .swiper-pagination {
+        position: relative;
+        bottom: 0;
+        pointer-events: all;
+        left: unset;
+        text-align: left;
+
+        .swiper-pagination-bullet {
+          width: 19px;
+          height: 19px;
+          opacity: 1;
+          background-color: transparent;
+          margin: 0;
+          border: 1px solid $white;
+
+          @include not-last {
+            margin-right: 13px;
+          }
+
+          &-active {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .hero-bottom-image {
+    position: absolute;
+    right: 0;
+    bottom: -22%;
+    width: 100%;
+    max-width: 26.5%;
+    z-index: 1;
+
+    .image-ratio {
+      padding-top: 93%;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.site-footer {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  padding: 83px 0 44px;
+
+  h6 {
+    margin-bottom: 24px;
+    @extend .font-bold;
+    @extend .text-capitalize;
+  }
+
+  .h6-lg {
+    @extend .text-uppercase;
+  }
+
+  &__links {
+    ul {
+      li {
+        @include not-last {
+          margin-bottom: 20px;
+        }
+
+        a {
+          font-size: 17px;
+          line-height: 25px;
+          display: block;
+        }
+      }
+    }
+
+    p {
+      margin-top: 68px;
+      @extend .font-bold;
+    }
+  }
+
+  &__newsletter {
+    .newsletter-block {
+      margin-top: 35px;
+
+      .input-group {
+        .form-control {
+          padding: 14px 24px;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $dim_black;
+          background-color: transparent;
+          border: 1px solid $dim_black;
+          border-right: none;
+          border-radius: 0;
+          height: 63px;
+          border-radius: 15px;
+
+          @include placeholder {
+            color: $red;
+          }
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+
+        .submit-btn {
+          border-radius: 0;
+          // width: 45px;
+          height: 63px;
+          border: 1px solid;
+          border-color: $dim_black;
+          border-left: none;
+          border-radius: 15px;
+          padding: 14px 24px;
+
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 130px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+
+    .social-links {
+      padding-bottom: 12px;
+
+      ul {
+        li {
+          @include not-last {
+            margin-right: 30px;
+          }
+
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .policy-links {
+      ul {
+        li {
+          a {
+            padding-right: 10px;
+          }
+
+          @include not-last {
+            margin-right: 10px;
+
+            &::after {
+              content: '|';
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
