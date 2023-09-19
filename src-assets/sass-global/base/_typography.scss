@@ -34,6 +34,17 @@
   @extend .text-overflow;
 }
 
+.font-helvetica {
+    font-family: $body_font;
+}
+
+.font-retail {
+    font-family: $heading_font;
+}
+
+.font-myriadpro {
+    font-family: $font_myriad_pro;
+}
 
 a,
 .nav-link {
@@ -59,6 +70,7 @@ h5,
 h6,
 .h6 {
   margin: 0;
+  font-family: $heading_font;
 }
 
 h1,
@@ -116,6 +128,12 @@ p {
   @extend .font-bold;
 
   @include media-breakpoint-down(md) {}
+
+  &-sm {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 10px;
+  }
 
   &-reset {
     padding: 0;

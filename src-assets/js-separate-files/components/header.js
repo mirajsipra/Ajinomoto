@@ -32,7 +32,7 @@ setHeaderHeight();
 
 /* Dropdown menu open on hover */
 if (window.innerWidth > 992) {
-  document.querySelectorAll('.navbar-nav .nav-item').forEach(function (each) {
+  document.querySelectorAll('.navbar-nav .dropdown').forEach(function (each) {
     each.addEventListener('mouseover', function (e) {
 
       let el_link = this.querySelector('a[data-bs-toggle]');

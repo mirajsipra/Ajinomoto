@@ -1,0 +1,23 @@
+.content-with-bg {
+  background: url(../img/home-kitchen-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  min-height: 1080px;
+
+  .content-block {
+    width: 100%;
+    max-width: 650px;
+    padding: 150px 0;
+
+    h2 {
+      margin-bottom: 52px;
+    }
+
+    p {
+      padding-bottom: 6px;
+    }
+  }
+}

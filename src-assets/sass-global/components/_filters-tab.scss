@@ -1,0 +1,72 @@
+.filters-tab {
+  position: relative;
+  padding-bottom: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: $dim_yellow;
+    height: 50%;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .nav-tabs {
+    border: none;
+    justify-content: center;
+    margin-bottom: 44px;
+
+    .nav-item {
+      margin: 0 54px;
+
+      .nav-link {
+        padding: 10px 25px;
+        font-size: 28px;
+        line-height: 1;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        @extend .font-bold;
+
+        &.active {
+          border-color: $red;
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &__content {
+    .filter-block {
+      height: 100%;
+      width: 100%;
+      max-width: 272px;
+      margin: 0 auto;
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+
+        .image-wrapper {
+          width: 100%;
+          border-radius: 15px;
+          overflow: hidden;
+          width: 100%;
+          max-width: 172px;
+          margin: 0 auto 27px;
+        }
+
+        .filter-meta {
+          h6 {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
