@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  margin-bottom: 22%;
+  z-index: 2;
 
   .hero-swiper {
     .swiper-slide {
@@ -42,7 +42,7 @@
       bottom: 50px;
       width: 100%;
       pointer-events: none;
-      
+
       .swiper-pagination {
         position: relative;
         bottom: 0;

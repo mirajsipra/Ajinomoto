@@ -1,0 +1,25 @@
+.brand-detail {
+    padding: 205px 0 90px;
+    overflow: hidden;
+
+    .left-image {
+        margin-left: -210px;
+    }
+
+    .content-block {
+        width: 100%;
+        max-width: 590px;
+
+        h6 {
+            padding-bottom: 28px;
+        }
+
+        p {
+            padding-top: 63px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 58px;
+    }
+}

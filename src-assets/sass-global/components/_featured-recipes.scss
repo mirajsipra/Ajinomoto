@@ -1,0 +1,19 @@
+.featured-recipes {
+    padding: 108px 0 150px;
+    background-image: url('/assets/img/Featured-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__cards {
+        padding-top: 60px;
+
+        .featured-image {
+            padding-bottom: 28px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+    }
+}

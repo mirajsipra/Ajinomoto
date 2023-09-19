@@ -1,0 +1,45 @@
+.content-with-image {
+  position: relative;
+  z-index: 2;
+
+  .content-block {
+    height: 100%;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      max-width: 910px;
+      padding: 120px 105px;
+
+      h2 {
+        margin-bottom: 52px;
+      }
+    }
+
+  }
+
+  .image-wrapper {
+    height: 100%;
+    position: relative;
+
+    .image-ratio {
+      padding-top: 0;
+      position: static;
+    }
+  }
+
+  &--bottom-image {
+    position: absolute;
+    right: 0;
+    bottom: -22%;
+    width: 100%;
+    max-width: 26.5%;
+    z-index: 1;
+
+    .image-ratio {
+      padding-top: 115%;
+    }
+  }
+}

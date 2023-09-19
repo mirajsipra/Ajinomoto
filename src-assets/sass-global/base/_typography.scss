@@ -2,6 +2,10 @@
   font-weight: 300;
 }
 
+.font-regular {
+  font-weight: 400;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -34,6 +38,17 @@
   @extend .text-overflow;
 }
 
+.font-helvetica {
+  font-family: $body_font;
+}
+
+.font-retail {
+  font-family: $heading_font;
+}
+
+.font-myriadpro {
+  font-family: $font_myriad_pro;
+}
 
 a,
 .nav-link {
@@ -59,6 +74,7 @@ h5,
 h6,
 .h6 {
   margin: 0;
+  font-family: $heading_font;
 }
 
 h1,
@@ -75,7 +91,8 @@ h2,
 
 h3,
 .h3 {
-  &.h3-lg {}
+  font-size: 40px;
+  font-weight: 1.5;
 }
 
 h4,
@@ -105,6 +122,21 @@ p {
   margin: 0;
 }
 
+.copy-xl {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.copy-lg {
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.copy-md {
+  font-size: 28px;
+  line-height: 1.14;
+}
+
 .btn {
   transition: 0.2s all ease;
   box-shadow: none;
@@ -116,6 +148,12 @@ p {
   @extend .font-bold;
 
   @include media-breakpoint-down(md) {}
+
+  &-sm {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 10px;
+  }
 
   &-reset {
     padding: 0;

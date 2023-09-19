@@ -1,0 +1,55 @@
+.our-brands {
+  background: url(../img/our-brands-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 185px 0 255px;
+  position: relative;
+  z-index: 2;
+
+  .title-block {
+    margin-bottom: 56px;
+  }
+
+  &__block {
+    height: 100%;
+
+    &--inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 44px 26px;
+      text-align: center;
+      border-radius: 15px;
+
+      h4 {
+        margin-bottom: 20px;
+        @extend .font-bold;
+      }
+
+      p {
+        line-height: 25px;
+      }
+
+      .image-wrapper {
+        margin: 30px 0 42px;
+        min-height: 156px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  &--bottom-image {
+    position: absolute;
+    left: 0;
+    bottom: -18.7%;
+    width: 100%;
+    max-width: 25.3%;
+    z-index: 1;
+
+    .image-ratio {
+      padding-top: 111%;
+    }
+  }
+}
