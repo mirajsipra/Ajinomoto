@@ -89,3 +89,43 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Retail Demo';
+    src: url('../fonts/RetailDemo-Bold.eot');
+    src: url('../fonts/RetailDemo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RetailDemo-Bold.woff2') format('woff2'),
+        url('../fonts/RetailDemo-Bold.woff') format('woff'),
+        url('../fonts/RetailDemo-Bold.ttf') format('truetype'),
+        url('../fonts/RetailDemo-Bold.svg#RetailDemo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Retail Demo';
+    src: url('../fonts/RetailDemo-Semibold.eot');
+    src: url('../fonts/RetailDemo-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RetailDemo-Semibold.woff2') format('woff2'),
+        url('../fonts/RetailDemo-Semibold.woff') format('woff'),
+        url('../fonts/RetailDemo-Semibold.ttf') format('truetype'),
+        url('../fonts/RetailDemo-Semibold.svg#RetailDemo-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Retail Demo';
+    src: url('../fonts/RetailDemo-Medium.eot');
+    src: url('../fonts/RetailDemo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RetailDemo-Medium.woff2') format('woff2'),
+        url('../fonts/RetailDemo-Medium.woff') format('woff'),
+        url('../fonts/RetailDemo-Medium.ttf') format('truetype'),
+        url('../fonts/RetailDemo-Medium.svg#RetailDemo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+

@@ -1,0 +1,32 @@
+.brand-featured {
+    padding: 135px 0 110px;
+    background-image: url(/assets/img/bg-pattern.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .image-wrapper {
+        width: 100%;
+        max-width: 318px;
+
+        .image-ratio {
+            padding-top: 145%;
+        }
+    }
+
+    .content-block {
+        width: 100%;
+        max-width: 542px;
+        padding-top: 25px;
+
+        .btn-wrapper {
+            margin-top: 48px;
+            padding-top: 25px;
+
+            a {
+                @include not-last {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

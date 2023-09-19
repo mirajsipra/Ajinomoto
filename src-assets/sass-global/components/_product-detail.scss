@@ -1,0 +1,119 @@
+.product-detail {
+    overflow: hidden;
+
+    &__swiper {
+        position: relative;
+
+        .product-detail__Main {
+            .swiper-slide {
+                .product-detail__featuredimage {
+
+                    .image-ratio {
+                        padding-top: 104%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            display: none;
+        }
+
+        .swiper-button-next {
+            right: 78px;
+        }
+
+        .swiper-button-prev {
+            left: 100px;
+        }
+
+
+        .product-detail__ThumbsNav {
+            width: 100%;
+            max-width: 450px;
+            margin: 30px auto;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .swiper-slide {
+                width: 100%;
+                max-width: 50px;
+                max-height: 50px;
+                border-radius: 10px;
+                cursor: pointer;
+
+                @include not-last {
+                    margin-right: 25px;
+                }
+
+                .product-detail__thumbimg {
+                    border-radius: 10px !important;
+                }
+            }
+
+            .swiper-slide-thumb-active {
+                border: 2px solid $white;
+            }
+        }
+
+        .logo-wrapper {
+            position: absolute;
+            top: 54px;
+            right: 38px;
+            z-index: 1;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 856px;
+        padding-left: 135px;
+
+        .product-category {
+            padding-bottom: 42px;
+        }
+
+        .product-swatches {
+            padding-top: 43px;
+            display: flex;
+            align-items: center;
+
+            .product-swatches__btns {
+                ul {
+                    display: flex;
+
+                    li {
+                        padding: 7px 20px;
+                        border: 1px solid $black;
+                        border-radius: 25px;
+
+                        @include not-last {
+                            margin-right: 28px;
+                        }
+
+                        &:hover {
+                            background-color: $black;
+                            color: $red;
+                        }
+                    }
+
+                    .active {
+                        border: 3px solid $black;
+                    }
+                }
+            }
+        }
+
+        .btn-wrapper {
+            padding-top: 42px;
+        }
+
+        .content-block {
+            padding-top: 93px;
+        }
+    }
+}
