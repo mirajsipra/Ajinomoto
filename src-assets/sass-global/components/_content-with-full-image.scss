@@ -1,0 +1,22 @@
+.content-with-full-image {
+    padding: 165px 0 90px;
+
+    .title-block {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .btn-wrapper {
+        margin-top: 40px;
+    }
+
+    .image-wrapper {
+        margin-top: 73px;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .image-ratio {
+            padding-top: 47%;
+        }
+    }
+}

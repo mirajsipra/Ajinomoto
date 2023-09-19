@@ -15,6 +15,14 @@
     color: $white;
   }
 
+  .page-brand & {
+    position: fixed;
+    left: 0;
+    box-shadow: none;
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+
   .menu-opened &,
   .is-scrolling & {
     background-color: $white;
