@@ -1,0 +1,76 @@
+.blog {
+  padding-top: 66px;
+  padding-bottom: 94px;
+
+  .title-block {
+    padding-top: 66px;
+    padding-bottom: 124px;
+  }
+
+  &--isotope-wrapper {
+    .blog-filter {
+      ul {
+        li {
+          margin: 0 33px;
+
+          .btn-filter {
+            font-size: 28px;
+            line-height: 1;
+            padding: 10px 30px;
+            font-weight: normal;
+            border: 1px solid transparent;
+
+            &.active {
+              border-color: $red;
+              color: $red;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .grid {
+      margin: 0 -8px;
+
+      .grid-item {
+        width: 33%;
+        padding: 35px 8px;
+      }
+    }
+  }
+}
+
+.blog-card {
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .image-wrapper {
+      border-radius: 15px;
+      overflow: hidden;
+
+      .image-ratio {
+        padding-top: 58%;
+      }
+    }
+  }
+
+  &__meta {
+    padding-top: 30px;
+
+    span {
+      font-size: 19px;
+      @extend .font-bold;
+      color: rgba(28, 29, 25, .5);
+    }
+
+    h4 {
+      font-size: 30px;
+      @extend .font-helvetica;
+    }
+  }
+}

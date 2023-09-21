@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: auto;
 
-    .accordion-with-content {
+    .accordion-block {
         width: 100%;
         max-width: 792px;
 
@@ -72,6 +72,8 @@
         width: 100%;
         max-width: 772px;
         margin-left: auto;
+        border-radius: 15px;
+        overflow: hidden;
 
         .image-ratio {
             padding-top: 120.4%;

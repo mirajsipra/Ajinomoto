@@ -1,0 +1,52 @@
+.hero-recipe {
+  padding: 105px 0;
+  position: relative;
+  z-index: 3;
+
+  .content-block {
+    width: 100%;
+    max-width: 625px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      margin-bottom: 44px;
+    }
+
+    .btn-wrapper {
+      margin-top: 52px;
+    }
+  }
+
+  &--left-image,
+  &--right-image {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &--left-image {
+    width: 100%;
+    max-width: 52%;
+    right: 100%;
+    transform: translateX(50%) rotate(-169deg);
+    top: -51%;
+
+    .image-ratio {
+      padding-top: 81%;
+    }
+  }
+
+  &--right-image {
+    left: 100%;
+    transform: translateX(-60%) rotate(-56deg);
+    width: 100%;
+    max-width: 48%;
+    top: -235px;
+
+    .image-ratio {
+      padding-top: 87%;
+    }
+  }
+}

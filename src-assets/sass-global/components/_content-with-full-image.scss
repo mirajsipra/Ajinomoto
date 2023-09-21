@@ -1,5 +1,14 @@
 .content-with-full-image {
     padding: 165px 0 90px;
+    position: relative;
+
+    .pattern-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        mix-blend-mode: multiply;
+        opacity: 14%;
+    }
 
     .title-block {
         width: 100%;

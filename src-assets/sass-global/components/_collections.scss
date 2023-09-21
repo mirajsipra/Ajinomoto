@@ -74,6 +74,22 @@
 
     }
   }
+}
 
+.collections-all {
+  padding-top: 110px;
+  padding-bottom: 175px;
 
+  &__top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .filter-close-button {
+      .btn {
+        opacity: .5;
+        @extend .font-regular;
+      }
+    }
+  }
 }

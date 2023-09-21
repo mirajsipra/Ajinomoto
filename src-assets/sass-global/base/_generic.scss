@@ -19,6 +19,7 @@ body {
   @include font-size(20px);
   line-height: 1.5;
   color: $dim_black;
+  overflow-x: hidden;
 }
 
 img {
@@ -128,19 +129,35 @@ img {
 }
 
 .title-block {
-    width: 100%;
-    max-width: 855px;
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $heading_font;
-    }
+  width: 100%;
+  max-width: 855px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $heading_font;
+  }
 }
 
 .main-title {
-    padding: 160px 0 126px;
+  padding: 160px 0 126px;
+}
+
+.breadcrumb-wrapper {
+  padding-bottom: 42px;
+
+  .breadcrumb {
+    .breadcrumb-item {
+      +.breadcrumb-item {
+        &::before {
+          content: '>';
+          color: $red;
+          font-size: 19px;
+        }
+      }
+    }
+  }
 }
