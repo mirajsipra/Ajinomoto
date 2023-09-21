@@ -1,0 +1,81 @@
+.faq-accordion {
+    padding-top: 100px;
+    overflow: hidden;
+
+    &__blocks {
+        padding-top: 150px;
+
+        &--inner {
+            padding: 80px 0;
+            position: relative;
+
+            .accordion-faq-block {
+                .accordion {
+                    .accordion-item {
+                        background-color: transparent;
+                        border-bottom: 1px solid $black;
+
+                        .accordion-header {
+                            .accordion-button {
+                                background-color: $transparent;
+                                color: $black;
+
+                                box-shadow: none;
+                                padding: 28px 0;
+
+
+                                h4 {
+                                    font-size: 26px;
+                                    line-height: 1.2;
+                                    font-family: font-helvetica;
+                                    font-weight: 400;
+                                }
+
+                                &:not(.collapsed) {
+                                    h4 {
+                                        font-weight: bold !important;
+                                    }
+
+                                    &::after {
+                                        transform: rotate(-180deg) !important;
+                                    }
+                                }
+
+                                &::after {
+                                    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.417' height='10' viewBox='0 0 11.417 10'%3E%3Cg id='Arrow' transform='translate(10.708) rotate(90)'%3E%3Crect id='Area' width='10' height='10' fill='none'/%3E%3Cpath id='Border' d='M5.7,5,.718,10,0,9.28,4.3,4.989.011.709.718,0Z' transform='translate(3)' fill='%231c1d19' stroke='%231c1d19' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A");
+                                    background-image: none;
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: auto;
+                                    height: auto;
+                                    font-size: 0;
+                                    line-height: 0;
+                                }
+                            }
+                        }
+
+                        .accordion-body {
+                            padding: 22px 0 57px;
+                        }
+                    }
+                }
+            }
+
+            .faq-image-left {
+                position: absolute;
+                left: -245px;
+            }
+
+            .faq-image-right {
+                padding-top: 100px;
+                margin-right: -280px;
+
+                .image-ratio {
+                    padding-top: 78%;
+                }
+            }
+        }
+    }
+}

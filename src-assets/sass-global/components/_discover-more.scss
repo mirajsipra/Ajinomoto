@@ -1,0 +1,29 @@
+.discover-more {
+    padding: 125px 0 105px;
+    overflow: hidden;
+
+    &__swiper {
+        padding-top: 50px;
+
+        .swiper {
+            overflow: visible;
+
+            .swiper-slide {
+                .discover-card {
+                    .image-wrapper {
+                        border-radius: 15px;
+                        overflow: hidden;
+
+                        .image-ratio {
+                            padding-top: 128%;
+                        }
+                    }
+
+                    .text-wrapper {
+                        padding-top: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
