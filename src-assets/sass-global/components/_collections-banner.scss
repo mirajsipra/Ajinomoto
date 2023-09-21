@@ -1,0 +1,30 @@
+.collections-banner {
+  background: url(../img/collection-banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: calc(100vh - var(--header-height));
+  position: relative;
+  z-index: 2;
+
+  .content-block {
+    padding: 117px 0;
+    width: 100%;
+    max-width: 650px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__showcase {
+    position: absolute;
+    width: 60.5%;
+    top: -6.6%;
+    right: -16%;
+
+    .image-ratio {
+      padding-top: 71%;
+    }
+  }
+}

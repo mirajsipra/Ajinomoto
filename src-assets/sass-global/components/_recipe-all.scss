@@ -1,0 +1,56 @@
+.recipe-all {
+  padding-top: 125px;
+
+  &__top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .filter-close-button {
+      .btn {
+        opacity: .5;
+        @extend .font-regular;
+      }
+    }
+  }
+}
+
+.recipe-card {
+  height: 100%;
+  padding: 45px 0 75px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .recipe-thumbnail {
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 26px;
+
+      .image-ratio {
+        padding-top: 128%;
+      }
+    }
+
+    .recipe-meta {
+
+      h4 {
+        font-size: 30px;
+        margin-bottom: 26px;
+        @extend .font-helvetica;
+        @extend .font-bold;
+      }
+
+      h6 {
+        @extend .h6-lg;
+        @extend .font-helvetica;
+
+        @include not-last {
+          margin-bottom: 11px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.recipe-filter {
+  background-color: $dim_yellow;
+  padding: 54px 0;
+  position: relative;
+
+  .container {
+    max-width: 1250px;
+  }
+
+  .recipe-filter-wrapper {
+    .btn {
+      font-size: 28px;
+      padding-right: 45px;
+      position: relative;
+
+      &::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.439' height='14.5' viewBox='0 0 25.439 14.5'%3E%3Cpath id='Border' d='M14.5,12.719,1.826,25.439,0,23.607,10.929,12.69.029,1.8,1.826,0Z' transform='translate(25.439) rotate(90)' fill='%23131411'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        font-size: 0;
+        line-height: 0;
+        @extend .transition;
+      }
+
+      &[aria-expanded="true"] {
+        &::after {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .filter-collapse {
+    position: absolute;
+    left: 0;
+    top: calc(100% - 54px);
+    width: 100%;
+    background: $dim_yellow;
+    z-index: 2;
+
+    .card {
+      background-color: transparent;
+      border-radius: 0;
+      border: none;
+      padding: 45px 0 80px;
+    }
+
+    .recipe-filter-options {
+      .form-check {
+        display: flex;
+        min-height: auto;
+        padding-left: 0;
+        margin-bottom: 20px;
+        align-items: center;
+
+        .form-check-input,
+        input[type="radio"] {
+          width: 25px;
+          height: 25px;
+          margin-top: 0;
+          border: 1px solid $dim_black;
+          border-radius: 5px !important;
+          float: none;
+          margin-left: 0;
+
+          &:checked {
+            background-color: $black;
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+
+        .form-check-label,
+        label {
+          padding-left: 25px;
+          line-height: 1.25;
+        }
+      }
+    }
+  }
+}
