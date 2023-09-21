@@ -1,0 +1,47 @@
+.direction {
+    padding: 127px 0 102px;
+
+    &__content {
+        .content-block {
+            padding-top: 55px;
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    @include not-last {
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+        }
+
+        .video-block {
+
+            .video-wrapper {
+                position: relative;
+                width: 100%;
+                max-width: 1140px;
+                margin: 0 auto;
+
+                .image-ratio {
+                    padding-top: 57.3%;
+                }
+
+                .about-video-cta {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+                    outline: none !important;
+                    box-shadow: none !important;
+
+                    &--pause {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

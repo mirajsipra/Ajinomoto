@@ -11,24 +11,24 @@ window.addEventListener("scroll", function () {
 
 setHeaderHeight();
 
- function getHeaderHeight() {
-     var headerHeight = siteHeader.offsetHeight;
-     return headerHeight;
- }
+function getHeaderHeight() {
+  var headerHeight = siteHeader.offsetHeight;
+  return headerHeight;
+}
 
- function setHeaderHeight() {
-     var headerHeight = getHeaderHeight();
-     document.documentElement.style
-         .setProperty('--header-height', headerHeight + 'px');
- }
+function setHeaderHeight() {
+  var headerHeight = getHeaderHeight();
+  document.documentElement.style
+    .setProperty('--header-height', headerHeight + 'px');
+}
 
- window.addEventListener('load', function (e) {
-     setHeaderHeight();
- });
+window.addEventListener('load', function (e) {
+  setHeaderHeight();
+});
 
- window.addEventListener('resize', function (e) {
-     setHeaderHeight();
- });
+window.addEventListener('resize', function (e) {
+  setHeaderHeight();
+});
 
 /* Dropdown menu open on hover */
 if (window.innerWidth > 992) {

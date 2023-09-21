@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+
 import {
   Autoplay,
   EffectFade,
@@ -98,7 +99,7 @@ var instaFeedSwiper = new Swiper(".insta-feed .swiper-init", {
 var swiper = new Swiper(".recommended-products .swiper-init", {
   slidesPerView: 3.2,
   spaceBetween: 15,
-//   loop: true,
+  //   loop: true,
   grabCursor: true,
 });
 
@@ -137,6 +138,27 @@ var productUsageSwiper = new Swiper(".product-how-to-use .product-usage-swiper",
 
 //  Brand Story: brand-story.html
 var brandStory = new Swiper(".brandStory", {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  grabCursor: true,
+});
+
+
+//  Product Usage on Brand Page: product-usage.html
+var productUsage = new Swiper(".productUsage", {
+  modules: [Navigation],
+  slidesPerView: 1,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+//  Discover More: discover-more.html
+var discoverMore = new Swiper(".discover-more__swiper .discoverMore", {
   slidesPerView: 4,
   spaceBetween: 16,
   grabCursor: true,

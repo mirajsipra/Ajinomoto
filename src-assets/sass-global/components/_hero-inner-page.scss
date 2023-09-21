@@ -1,0 +1,38 @@
+.hero-inner-page {
+    background-image: url(/assets/img/hero-contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0 160px;
+
+    &__bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        mix-blend-mode: multiply;
+        opacity: 0.14;
+        pointer-events: none;
+    }
+
+    &__caption {
+        width: 100%;
+        max-width: 650px;
+
+        h1 {
+            padding-bottom: 70px;
+        }
+    }
+
+    &__bottom-image {
+        position: absolute;
+        right: 0;
+        bottom: -50%;
+        width: 100%;
+        max-width: 26.5%;
+        z-index: 1;
+
+        .image-ratio {
+            padding-top: 93%;
+        }
+    }
+}
