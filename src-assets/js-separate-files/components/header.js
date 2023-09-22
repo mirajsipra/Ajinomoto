@@ -9,6 +9,20 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+var siteNavigation = document.getElementById('siteNavigation');
+siteNavigation.addEventListener('show.bs.collapse', function () {
+  this.classList.add('active');
+  body.classList.add("overflow-stopped");
+  body.classList.add("menu-opened");
+})
+siteNavigation.addEventListener('hide.bs.collapse', function () {
+  this.classList.remove('active');
+  body.classList.remove("overflow-stopped");
+  body.classList.remove("menu-opened");
+});
+
+
 setHeaderHeight();
 
 function getHeaderHeight() {
@@ -29,48 +43,3 @@ window.addEventListener('load', function (e) {
 window.addEventListener('resize', function (e) {
   setHeaderHeight();
 });
-
-/* Dropdown menu open on hover */
-if (window.innerWidth > 992) {
-  document.querySelectorAll('.navbar-nav .dropdown').forEach(function (each) {
-    each.addEventListener('mouseover', function (e) {
-
-      let el_link = this.querySelector('a[data-bs-toggle]');
-      if (el_link != null) {
-        let nextEl = el_link.nextElementSibling;
-        el_link.classList.add('show');
-        nextEl.classList.add('show');
-      }
-      body.classList.add("menu-opened");
-    });
-    each.addEventListener('mouseleave', function (e) {
-      let el_link = this.querySelector('a[data-bs-toggle]');
-      if (el_link != null) {
-        let nextEl = el_link.nextElementSibling;
-        el_link.classList.remove('show');
-        nextEl.classList.remove('show');
-      }
-      body.classList.remove("menu-opened");
-    })
-  });
-
-  document.querySelectorAll('.navbar-nav .dropdown').forEach(function (each) {
-    each.addEventListener('mouseover', function (e) {
-
-      let el_link = this.querySelector('.dropdown-toggle');
-      if (el_link != null) {
-        let nextEl = el_link.nextElementSibling;
-        el_link.classList.add('show');
-        nextEl.classList.add('show');
-      }
-    });
-    each.addEventListener('mouseleave', function (e) {
-      let el_link = this.querySelector('.dropdown-toggle');
-      if (el_link != null) {
-        let nextEl = el_link.nextElementSibling;
-        el_link.classList.remove('show');
-        nextEl.classList.remove('show');
-      }
-    })
-  });
-}
