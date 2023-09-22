@@ -1,12 +1,21 @@
 .insta-feed {
   padding: 152px 0 62px;
 
+  @include media-breakpoint-down(lg) {
+    padding: 96px 0 64px;
+  }
+
   .title-block {
     max-width: 930px;
-    
+
     h2 {
       color: $red_secondary;
       margin-bottom: 42px;
+
+      @include media-breakpoint-down(lg) {
+        word-break: break-all;
+        margin-bottom: 24px;
+      }
     }
   }
 

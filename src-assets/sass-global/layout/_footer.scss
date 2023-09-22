@@ -4,10 +4,26 @@
   font-size: 16px;
   padding: 83px 0 44px;
 
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0 48px;
+    background-color: $light;
+  }
+
+  &__logo {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 140px;
+    }
+  }
+
   h6 {
     margin-bottom: 24px;
     @extend .font-bold;
     @extend .text-capitalize;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 16px;
+    }
   }
 
   .h6-lg {
@@ -15,16 +31,29 @@
   }
 
   &__links {
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+
     ul {
       li {
         @include not-last {
           margin-bottom: 20px;
+
+          @include media-breakpoint-down(lg) {
+            margin-bottom: 16px;
+          }
         }
 
         a {
           font-size: 17px;
           line-height: 25px;
           display: block;
+
+          @include media-breakpoint-down(lg) {
+            font-size: 15px;
+          }
         }
       }
     }
@@ -36,8 +65,37 @@
   }
 
   &__newsletter {
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      max-width: 50%;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width: none;
+    }
+
+    h6 {
+      letter-spacing: 1.5px;
+
+      @include media-breakpoint-down(lg) {
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
+    }
+
     .newsletter-block {
       margin-top: 35px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 24px;
+      }
 
       .input-group {
         .form-control {
@@ -52,6 +110,11 @@
           border-radius: 0;
           height: 63px;
           border-radius: 15px;
+
+          @include media-breakpoint-down(md) {
+            height: 48px;
+            font-size: 14px;
+          }
 
           @include placeholder {
             color: $red;
@@ -73,6 +136,18 @@
           border-radius: 15px;
           padding: 14px 24px;
 
+          @include media-breakpoint-down(md) {
+            height: 48px;
+            padding: 10px 16px;
+          }
+
+          svg {
+            @include media-breakpoint-down(md) {
+              width: 20px;
+              height: 16px;
+            }
+          }
+
           &:focus {
             box-shadow: none;
             outline: none;
@@ -92,13 +167,25 @@
     max-width: 680px;
     margin: 0 auto;
 
+    @include media-breakpoint-down(lg) {
+      padding-top: 32px;
+    }
+
     .social-links {
       padding-bottom: 12px;
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 16px;
+      }
 
       ul {
         li {
           @include not-last {
             margin-right: 30px;
+
+            @include media-breakpoint-down(lg) {
+              margin-right: 16px;
+            }
           }
 
           a {
@@ -113,6 +200,11 @@
         li {
           a {
             padding-right: 10px;
+
+            @include media-breakpoint-down(md) {
+              font-size: 14px;
+              line-height: 32px;
+            }
           }
 
           @include not-last {

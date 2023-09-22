@@ -20,6 +20,14 @@ body {
   line-height: 1.5;
   color: $dim_black;
   overflow-x: hidden;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+  }
 }
 
 img {
@@ -159,5 +167,11 @@ img {
         }
       }
     }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .col {
+    flex: 1 0 0% !important;
   }
 }

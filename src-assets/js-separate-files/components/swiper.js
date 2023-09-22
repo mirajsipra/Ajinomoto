@@ -5,11 +5,23 @@ import {
   EffectFade,
   Pagination,
   Navigation,
-  Thumbs
+  Thumbs,
+  Controller
 } from 'swiper/modules';
 
-const heroSwiper = new Swiper(".hero .hero-swiper", {
+const heroBgSwiper = new Swiper(".hero-bg-swiper .swiper", {
   modules: [Pagination, Autoplay, EffectFade],
+  speed: 1000,
+  loop: true,
+  slidesPerView: "auto",
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
+
+const heroSwiper = new Swiper(".hero-caption .swiper", {
+  modules: [Pagination, Autoplay, EffectFade, Controller],
   speed: 1000,
   loop: true,
   slidesPerView: "auto",
@@ -18,12 +30,13 @@ const heroSwiper = new Swiper(".hero .hero-swiper", {
   fadeEffect: {
     crossFade: true
   },
-  autoplay: {
-    delay: 15000,
-  },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.hero-caption__pagination',
     clickable: true,
+  },
+  controller: {
+    by: 'slide',
+    control: heroBgSwiper,
   },
 });
 
@@ -44,8 +57,8 @@ function showImages(index) {
 }
 
 var featuredCollectionSwiper = new Swiper(".featured-collection--swiper .swiper-init", {
-  slidesPerView: 4.7,
-  spaceBetween: 80,
+  slidesPerView: 3.2,
+  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
   grabCursor: true,
@@ -72,7 +85,21 @@ var featuredCollectionSwiper = new Swiper(".featured-collection--swiper .swiper-
         });
       });
     }
-  }
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3.5,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3.7,
+      spaceBetween: 60,
+    },
+    1200: {
+      slidesPerView: 4.7,
+      spaceBetween: 80,
+    },
+  },
 });
 
 
