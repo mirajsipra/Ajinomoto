@@ -5,11 +5,23 @@ import {
   EffectFade,
   Pagination,
   Navigation,
-  Thumbs
+  Thumbs,
+  Controller
 } from 'swiper/modules';
 
-const heroSwiper = new Swiper(".hero .hero-swiper", {
+const heroBgSwiper = new Swiper(".hero-bg-swiper .swiper", {
   modules: [Pagination, Autoplay, EffectFade],
+  speed: 1000,
+  loop: true,
+  slidesPerView: "auto",
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
+
+const heroSwiper = new Swiper(".hero-caption .swiper", {
+  modules: [Pagination, Autoplay, EffectFade, Controller],
   speed: 1000,
   loop: true,
   slidesPerView: "auto",
@@ -18,12 +30,13 @@ const heroSwiper = new Swiper(".hero .hero-swiper", {
   fadeEffect: {
     crossFade: true
   },
-  autoplay: {
-    delay: 15000,
-  },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.hero-caption__pagination',
     clickable: true,
+  },
+  controller: {
+    by: 'slide',
+    control: heroBgSwiper,
   },
 });
 
