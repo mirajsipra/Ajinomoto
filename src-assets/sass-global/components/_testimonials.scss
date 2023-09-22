@@ -2,8 +2,20 @@
   padding-top: 247px;
   padding-bottom: 80px;
 
+  @include media-breakpoint-down(lg) {
+    padding: 64px 0;
+  }
+
   .title-block {
     margin-bottom: 57px;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 125px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 104px;
+    }
   }
 
   .testimonials-swiper {
@@ -18,11 +30,28 @@
       max-width: 180px;
       z-index: 2;
       mix-blend-mode: difference;
+
+      @include media-breakpoint-down(xl) {
+        top: -75px;
+        max-width: 150px;
+      }
+
+      @include media-breakpoint-down(md) {
+        top: -86px;
+        max-width: 100px;
+        left: auto;
+        right: 45px;
+        transform: none;
+      }
     }
 
     .swiper-slide {
       width: 80%;
       padding: 0 8px;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
 
     .swiper-button-wrapper {
@@ -35,6 +64,17 @@
       justify-content: space-between;
       align-items: center;
 
+      @include media-breakpoint-down(xl) {
+        right: 20px;
+      }
+
+      @include media-breakpoint-down(md) {
+        right: auto;
+        left: 20px;
+        top: -64px;
+        max-width: 60px;
+      }
+
       .swiper-button-prev,
       .swiper-button-next {
         width: auto;
@@ -46,6 +86,10 @@
         transform: none;
         margin: 0;
         transition: .3s all ease;
+
+        @include media-breakpoint-down(md) {
+          width: 14px;
+        }
 
         &::after {
           display: none;
@@ -67,11 +111,33 @@
       padding: 75px 84px 90px;
       border-radius: 15px;
 
+      @include media-breakpoint-down(xl) {
+        padding: 40px 70px 60px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 80px 24px 48px;
+      }
+
       .product-block {
         width: 100%;
         max-width: 475px;
 
+        @include media-breakpoint-down(lg) {
+          max-width: none;
+        }
+
         .image-wrapper {
+          @include media-breakpoint-down(lg) {
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+          }
+
+          @include media-breakpoint-down(md) {
+            max-width: 140px;
+          }
+
           .image-ratio {
             padding-top: 114%;
           }
@@ -83,11 +149,38 @@
         max-width: 415px;
         padding-left: 33px;
 
+        @include media-breakpoint-down(lg) {
+          padding-left: 0;
+          text-align: center;
+          margin: 40px auto 0;
+        }
+
         .rating-stars {
           ul {
+            @include media-breakpoint-down(lg) {
+              justify-content: center;
+            }
+
             li {
+
+              @include media-breakpoint-down(lg) {
+                width: 26px;
+                height: 26px;
+              }
+
               @include not-last {
                 margin-right: 8px;
+
+                @include media-breakpoint-down(lg) {
+                  margin-right: 4px;
+                }
+              }
+
+              svg {
+                @include media-breakpoint-down(lg) {
+                  width: 100%;
+                  height: 100%;
+                }
               }
             }
           }
@@ -96,13 +189,27 @@
         .text-wrapper {
           margin-top: 33px;
 
+          @include media-breakpoint-down(lg) {
+            margin-top: 24px;
+          }
+
           h4 {
             margin-bottom: 33px;
+
+            @include media-breakpoint-down(lg) {
+              margin-bottom: 16px;
+              font-size: 26px;
+              line-height: 32px;
+            }
           }
         }
 
         .user-meta {
           margin-top: 40px;
+
+          @include media-breakpoint-down(lg) {
+            margin-top: 16px;
+          }
         }
       }
     }

@@ -81,30 +81,63 @@ h1,
 .h1 {
   font-size: 80px;
   line-height: 1;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 50px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+  }
 }
 
 h2,
 .h2 {
   font-size: 60px;
   line-height: 1;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 32px;
+  }
 }
 
 h3,
 .h3 {
   font-size: 40px;
   font-weight: 1.5;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 32px;
+  }
+
 }
 
 h4,
 .h4 {
   font-size: 32px;
   line-height: 1.12;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 24px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+  }
 }
 
 h5,
 .h5 {
   font-size: 24px;
   line-height: 1.12;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 20px;
+  }
 }
 
 h6,
@@ -116,6 +149,14 @@ h6,
 .h6-lg {
   font-size: 20px;
   line-height: 1;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 15px;
+  }
 }
 
 p {
@@ -147,12 +188,22 @@ p {
   @extend .text-capitalize;
   @extend .font-bold;
 
-  @include media-breakpoint-down(md) {}
+  @include media-breakpoint-down(xl) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 13px 25px;
+  }
 
   &-sm {
     font-size: 16px;
     line-height: 20px;
     padding: 9px 10px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 9px 19px;
+    }
   }
 
   &-reset {

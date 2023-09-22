@@ -1,47 +1,46 @@
 .product-usage {
-    padding: 105px 0 100px;
-    position: relative;
+  padding: 105px 0 100px;
+  position: relative;
 
-    &__blocks {
-        .image-wrapper {
-            width: 100%;
-            max-width: 697px;
+  &__blocks {
+    .image-wrapper {
+      width: 100%;
+      max-width: 697px;
 
-            .image-ratio {
-                padding-top: 123.4%;
-            }
-        }
-
-        .content-block {
-            width: 100%;
-            max-width: 705px;
-
-            h5 {
-                padding-bottom: 52px;
-            }
-
-            p {
-                font-size: 24px;
-                line-height: 1.5;
-                padding-top: 55px;
-            }
-        }
+      .image-ratio {
+        padding-top: 123.4%;
+      }
     }
 
-    .product-bottom-image {
-        position: absolute;
-        right: 0;
-        bottom: -100px;
-        width: 100%;
-        max-width: 27.5%;
+    .content-block {
+      width: 100%;
+      max-width: 705px;
 
-        .image-ratio {
-            padding-top: 72%;
-        }
+      h5 {
+        padding-bottom: 52px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 1.5;
+        padding-top: 55px;
+      }
     }
-}
+  }
 
-.swiper-button-wrapper {
+  .product-bottom-image {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 100%;
+    max-width: 27.5%;
+
+    .image-ratio {
+      padding-top: 72%;
+    }
+  }
+
+  .swiper-button-wrapper {
     display: flex;
     position: absolute;
     bottom: 13%;
@@ -52,35 +51,36 @@
     align-items: center;
 
     .swiper-button-next {
-        width: auto;
-        height: auto;
-        position: relative;
-        right: unset;
-        left: unset;
-        top: unset;
-        transform: none;
-        margin: 0;
-        transition: .3s all ease;
-        margin-left: 22px;
+      width: auto;
+      height: auto;
+      position: relative;
+      right: unset;
+      left: unset;
+      top: unset;
+      transform: none;
+      margin: 0;
+      transition: .3s all ease;
+      margin-left: 22px;
 
-        &::after {
-            display: none;
-        }
+      &::after {
+        display: none;
+      }
     }
 
     .swiper-button-prev {
-        width: auto;
-        height: auto;
-        position: relative;
-        right: unset;
-        left: unset;
-        top: unset;
-        transform: none;
-        margin: 0;
-        transition: .3s all ease;
+      width: auto;
+      height: auto;
+      position: relative;
+      right: unset;
+      left: unset;
+      top: unset;
+      transform: none;
+      margin: 0;
+      transition: .3s all ease;
 
-        &::after {
-            display: none;
-        }
+      &::after {
+        display: none;
+      }
     }
+  }
 }
