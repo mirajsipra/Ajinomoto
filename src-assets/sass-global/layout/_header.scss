@@ -135,12 +135,12 @@
     .navbar-nav {
       .nav-item {
         @include not-last {
-          @include media-breakpoint-up(xl) {
-            margin-right: 67px;
-          }
-
           @include media-breakpoint-up(lg) {
             margin-right: 30px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            margin-right: 67px;
           }
         }
 
